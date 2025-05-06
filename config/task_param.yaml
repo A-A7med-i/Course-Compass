@@ -1,0 +1,132 @@
+search_queries_task:
+  description: >
+    Ahmed is searching for the most cost-effective {course_name} available online.
+    The search should focus on these specific learning platforms: {websites_list}.
+    A comprehensive search is required to identify all relevant courses across the internet for later comparison.
+    Only consider courses accessible to learners in {country_name}.
+    Provide up to {no_keywords} targeted search queries.
+    All search terms must be in {language} language.
+    Queries should be specific, including course providers (e.g., Coursera, Udemy), certification names (e.g., AWS Solutions Architect), or specialized technologies (e.g., TensorFlow, React Native).
+    Generic search terms like "online courses" or "learn programming" should be avoided.
+    Each query should direct to actual course purchase/enrollment pages rather than blogs, reviews, or course listing directories.
+
+  expected_output: A JSON object containing a list of suggested search queries.
+
+search_engine_task:
+  description: >
+    Execute a comprehensive web search using the provided search queries to locate specific course offerings.
+    Perform searches with each query and aggregate all relevant results into a unified collection.
+    Apply strict filtering criteria to ensure quality results:
+      - Only include direct links to legitimate e-learning platforms and course provider websites
+      - Each result must lead to a specific course page (with enrollment/purchase option), not category listings
+      - Exclude all blog posts, review sites, forums, and general informational pages
+      - Disregard any result with a confidence score below {score_th}
+      - Automatically detect and filter out potentially misleading or fraudulent websites
+    For each valid result, capture the course title, provider name, URL, price information, and any available metadata.
+    Prioritize results that include clear pricing information to facilitate subsequent comparison analysis.
+    When multiple versions of the same course exist (e.g., different tiers), include all variants with their distinct features.
+    The collected data will serve as the foundation for a comprehensive price comparison and value assessment.
+
+  expected_output: A JSON object containing structured search results with course details, pricing, and metadata.
+
+scraping_task:
+  description: >
+    Extract key course information from each provided URL.
+    For each course page, capture:
+      - Course title
+      - Provider/instructor name
+      - Current price and original price
+      - Course duration
+      - Skill level
+      - Rating and number of reviews
+      - Last updated date
+      - Main topics covered
+
+    Process all URLs in the list and standardize data format across different platforms.
+    Identify the {top_recommendations_no} best courses based on price, ratings, and recency.
+    Skip any URLs that don't lead to actual course pages.
+
+  expected_output: >
+    A JSON object containing course details including:
+    - Title, provider, and URL of each course
+    - Pricing information (current price, original price, currency)
+    - Course specifications (duration, level, topics covered)
+    - Quality indicators (rating, number of reviews, last update date)
+    - A separate section highlighting the top {top_recommendations_no} recommended courses
+
+reporter_task:
+  description: >
+    Generate a comprehensive, professional HTML report analyzing the course procurement options.
+
+    Technical requirements:
+    - Utilize Bootstrap 5 CSS framework for responsive, modern design
+    - Include interactive data visualizations (charts, graphs) using Chart.js or similar
+    - Ensure mobile-friendly layout with proper viewport settings
+    - Implement proper semantic HTML5 structure with accessibility features
+    - Include print-friendly CSS for physical documentation needs
+
+    Content requirements:
+    The report must include these clearly defined sections:
+
+    1. Executive Summary:
+      - Concise overview of key findings (1-2 paragraphs)
+      - Highlight top 3 recommended courses with rationale
+      - Include cost-saving opportunities identified
+
+    2. Introduction:
+      - Context about {company_name}'s training needs and objectives
+      - Scope of the course search (topics, platforms examined)
+      - Intended audience and application of the report
+
+    3. Methodology:
+      - Search criteria and parameters used
+      - Evaluation metrics for course quality assessment
+      - Price normalization approach for fair comparison
+      - Data collection timeframe and limitations
+
+    4. Findings:
+      - Interactive comparison table of all courses with sorting/filtering
+      - Price range analysis with statistical breakdown
+      - Visual price comparison across platforms (bar/scatter charts)
+      - Feature comparison matrix highlighting course differences
+      - Availability and accessibility considerations
+
+    5. Analysis:
+      - Price-to-value ratio assessment for each course
+      - Quality indicators evaluation (ratings, reviews, updates)
+      - Platform reliability and support comparison
+      - Cost structure analysis (one-time vs. subscription models)
+      - ROI projection based on industry standards
+
+    6. Recommendations:
+      - Top course recommendations with detailed justification
+      - Procurement strategy suggestions (bulk purchase, negotiation points)
+      - Alternative options for budget constraints
+      - Implementation timeline recommendation
+
+    7. Conclusion:
+      - Summary of key insights
+      - Strategic considerations for future training procurement
+      - Next steps for decision-makers
+
+    8. Appendices:
+      - Complete dataset in tabular format
+      - Search query details and timestamps
+      - Methodology details and evaluation criteria
+      - Glossary of technical terms
+
+    Design guidelines:
+    - Include company logo in header
+    - Maintain professional, data-focused aesthetic
+    - Ensure all tables and charts have proper legends and explanations
+    - Include interactive elements for exploring detailed data
+
+  expected_output: >
+    A complete, standalone HTML file containing a professional procurement report with:
+    - Properly structured HTML5 document with Bootstrap 5 integration
+    - Interactive data visualizations showing price comparisons
+    - Responsive design that works on desktop and mobile devices
+    - Company branding and styling throughout
+    - All eight required sections with comprehensive content
+    - Executive-ready presentation quality
+    - Print-friendly formatting
