@@ -1,0 +1,6 @@
+.idea
+AI-AGENT
+CourseCompass.egg-info
+logs
+__pycache__
+.env
