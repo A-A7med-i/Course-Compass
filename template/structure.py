@@ -18,6 +18,7 @@ class ProjectStructure:
             "src/schemas",
             "src/tools",
             "src/crew",
+            "src/app",
             "outs",
         ]
 
@@ -46,6 +47,8 @@ class ProjectStructure:
             "src/crew/__init__.py",
             "src/crew/define.py",
             "src/crew/main.py",
+            "src/app/__init__.py",
+            "src/app/interface.py",
             ".env",
             ".gitignore",
             "README.md",
