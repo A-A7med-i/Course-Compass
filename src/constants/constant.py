@@ -11,12 +11,11 @@ DESCRIPTION = "An AI agent to help find the best courses."
 MODEL_NAME = "groq/llama-3.3-70b-versatile"
 TEMPERATURE = 0
 
-
 # Paths and file locations
 AGENT_CONFIG_PATH = "/media/ahmed/Data/CourseCompass/config/agent_param.yaml"
 TASK_CONFIG_PATH = "/media/ahmed/Data/CourseCompass/config/task_param.yaml"
 LOG_FILE = "logging.log"
-LOG_DIR = "logs"
+LOG_DIR = "/media/ahmed/Data/CourseCompass/logs"
 
 
 # Logging configuration
@@ -52,3 +51,9 @@ INPUTS = {
     "top_recommendations_no": 5,
     "company_name": "TechCorp Inc.",
 }
+
+# OUTS files
+SEARCH_QUERIES_OUT = "/media/ahmed/Data/CourseCompass/outs/search_queries_agent.json"
+SEARCH_ENGINE_OUT = "/media/ahmed/Data/CourseCompass/outs/search_engine_agent.json"
+SCRAPING_OUT = "/media/ahmed/Data/CourseCompass/outs/scraping_agent.json"
+REPORTER_OUT = "/media/ahmed/Data/CourseCompass/outs/reporter_agent.html"
