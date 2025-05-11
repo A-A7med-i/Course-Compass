@@ -1,0 +1,290 @@
+{
+  "courses": [
+    {
+      "title": "Course 1",
+      "url": "https://www.example.com/course1",
+      "provider": "Provider 1",
+      "instructor": "Instructor 1",
+      "price": {
+        "amount": 10.99,
+        "currency": "USD",
+        "original_amount": 19.99,
+        "discount_percentage": 45.0
+      },
+      "duration": "4 weeks",
+      "level": "Beginner",
+      "rating": {
+        "score": 4.5,
+        "count": 100
+      },
+      "last_updated": "2022-01-01",
+      "topics": [
+        "Topic 1",
+        "Topic 2",
+        "Topic 3"
+      ],
+      "description": "This is a course description",
+      "value_score": 8.5
+    },
+    {
+      "title": "Course 2",
+      "url": "https://www.example.com/course2",
+      "provider": "Provider 2",
+      "instructor": "Instructor 2",
+      "price": {
+        "amount": 9.99,
+        "currency": "USD",
+        "original_amount": 14.99,
+        "discount_percentage": 33.0
+      },
+      "duration": "3 weeks",
+      "level": "Intermediate",
+      "rating": {
+        "score": 4.2,
+        "count": 50
+      },
+      "last_updated": "2022-02-01",
+      "topics": [
+        "Topic 4",
+        "Topic 5",
+        "Topic 6"
+      ],
+      "description": "This is another course description",
+      "value_score": 8.0
+    },
+    {
+      "title": "Course 3",
+      "url": "https://www.example.com/course3",
+      "provider": "Provider 3",
+      "instructor": "Instructor 3",
+      "price": {
+        "amount": 12.99,
+        "currency": "USD",
+        "original_amount": 19.99,
+        "discount_percentage": 35.0
+      },
+      "duration": "5 weeks",
+      "level": "Advanced",
+      "rating": {
+        "score": 4.8,
+        "count": 200
+      },
+      "last_updated": "2022-03-01",
+      "topics": [
+        "Topic 7",
+        "Topic 8",
+        "Topic 9"
+      ],
+      "description": "This is yet another course description",
+      "value_score": 9.0
+    },
+    {
+      "title": "Course 4",
+      "url": "https://www.example.com/course4",
+      "provider": "Provider 4",
+      "instructor": "Instructor 4",
+      "price": {
+        "amount": 11.99,
+        "currency": "USD",
+        "original_amount": 16.99,
+        "discount_percentage": 30.0
+      },
+      "duration": "4 weeks",
+      "level": "Beginner",
+      "rating": {
+        "score": 4.1,
+        "count": 80
+      },
+      "last_updated": "2022-04-01",
+      "topics": [
+        "Topic 10",
+        "Topic 11",
+        "Topic 12"
+      ],
+      "description": "This is a course description",
+      "value_score": 8.2
+    },
+    {
+      "title": "Course 5",
+      "url": "https://www.example.com/course5",
+      "provider": "Provider 5",
+      "instructor": "Instructor 5",
+      "price": {
+        "amount": 10.99,
+        "currency": "USD",
+        "original_amount": 14.99,
+        "discount_percentage": 27.0
+      },
+      "duration": "3 weeks",
+      "level": "Intermediate",
+      "rating": {
+        "score": 4.3,
+        "count": 60
+      },
+      "last_updated": "2022-05-01",
+      "topics": [
+        "Topic 13",
+        "Topic 14",
+        "Topic 15"
+      ],
+      "description": "This is another course description",
+      "value_score": 8.5
+    }
+  ],
+  "top_recommendations": [
+    {
+      "course": {
+        "title": "Course 3",
+        "url": "https://www.example.com/course3",
+        "provider": "Provider 3",
+        "instructor": "Instructor 3",
+        "price": {
+          "amount": 12.99,
+          "currency": "USD",
+          "original_amount": 19.99,
+          "discount_percentage": 35.0
+        },
+        "duration": "5 weeks",
+        "level": "Advanced",
+        "rating": {
+          "score": 4.8,
+          "count": 200
+        },
+        "last_updated": "2022-03-01",
+        "topics": [
+          "Topic 7",
+          "Topic 8",
+          "Topic 9"
+        ],
+        "description": "This is yet another course description",
+        "value_score": 9.0
+      },
+      "reason": "High rating and recent update",
+      "rank": 1
+    },
+    {
+      "course": {
+        "title": "Course 1",
+        "url": "https://www.example.com/course1",
+        "provider": "Provider 1",
+        "instructor": "Instructor 1",
+        "price": {
+          "amount": 10.99,
+          "currency": "USD",
+          "original_amount": 19.99,
+          "discount_percentage": 45.0
+        },
+        "duration": "4 weeks",
+        "level": "Beginner",
+        "rating": {
+          "score": 4.5,
+          "count": 100
+        },
+        "last_updated": "2022-01-01",
+        "topics": [
+          "Topic 1",
+          "Topic 2",
+          "Topic 3"
+        ],
+        "description": "This is a course description",
+        "value_score": 8.5
+      },
+      "reason": "High rating and good price",
+      "rank": 2
+    },
+    {
+      "course": {
+        "title": "Course 5",
+        "url": "https://www.example.com/course5",
+        "provider": "Provider 5",
+        "instructor": "Instructor 5",
+        "price": {
+          "amount": 10.99,
+          "currency": "USD",
+          "original_amount": 14.99,
+          "discount_percentage": 27.0
+        },
+        "duration": "3 weeks",
+        "level": "Intermediate",
+        "rating": {
+          "score": 4.3,
+          "count": 60
+        },
+        "last_updated": "2022-05-01",
+        "topics": [
+          "Topic 13",
+          "Topic 14",
+          "Topic 15"
+        ],
+        "description": "This is another course description",
+        "value_score": 8.5
+      },
+      "reason": "Good price and recent update",
+      "rank": 3
+    },
+    {
+      "course": {
+        "title": "Course 2",
+        "url": "https://www.example.com/course2",
+        "provider": "Provider 2",
+        "instructor": "Instructor 2",
+        "price": {
+          "amount": 9.99,
+          "currency": "USD",
+          "original_amount": 14.99,
+          "discount_percentage": 33.0
+        },
+        "duration": "3 weeks",
+        "level": "Intermediate",
+        "rating": {
+          "score": 4.2,
+          "count": 50
+        },
+        "last_updated": "2022-02-01",
+        "topics": [
+          "Topic 4",
+          "Topic 5",
+          "Topic 6"
+        ],
+        "description": "This is another course description",
+        "value_score": 8.0
+      },
+      "reason": "Good price",
+      "rank": 4
+    },
+    {
+      "course": {
+        "title": "Course 4",
+        "url": "https://www.example.com/course4",
+        "provider": "Provider 4",
+        "instructor": "Instructor 4",
+        "price": {
+          "amount": 11.99,
+          "currency": "USD",
+          "original_amount": 16.99,
+          "discount_percentage": 30.0
+        },
+        "duration": "4 weeks",
+        "level": "Beginner",
+        "rating": {
+          "score": 4.1,
+          "count": 80
+        },
+        "last_updated": "2022-04-01",
+        "topics": [
+          "Topic 10",
+          "Topic 11",
+          "Topic 12"
+        ],
+        "description": "This is a course description",
+        "value_score": 8.2
+      },
+      "reason": "Good rating",
+      "rank": 5
+    }
+  ],
+  "metadata": {
+    "date": "2022-06-01",
+    "source": "Example website"
+  }
+}
