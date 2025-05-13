@@ -5,9 +5,9 @@ CourseCompass is a Python-based project designed to provide tools and utilities 
 ## Features
 
 - **Agent-based architecture**: Includes agents for scraping, searching, and reporting.
-- **LLM Integration**: Supports large language model (LLM) interactions.
-- **Utilities**: Helper functions and tools for common tasks.
-- **Extensible Design**: Modular structure for easy customization and extension.
+- **LLM Integration**: Supports large language model (LLM) interactions for advanced AI capabilities.
+- **Utilities**: Helper functions and tools for common tasks, such as data processing and formatting.
+- **Extensible Design**: Modular structure for easy customization and extension, allowing developers to add new features seamlessly.
 
 ## Project Structure
 
@@ -67,9 +67,28 @@ CourseCompass
   python src/crew/main.py
   ```
 
+## Getting Started
+
+To get started with CourseCompass, follow these steps:
+
+1. Ensure you have Python 3.8 or higher installed on your system.
+2. Follow the installation steps above to set up the project.
+3. Explore the `src` directory to understand the modular structure and available agents.
+4. Run the main script to see the project in action.
+
+## Visual Overview
+
+Below is a screenshot showcasing the app's interface or functionality:
+
+![CourseCompass Screenshot](https://drive.google.com/uc?id=1VI_oys00NYAVY386vBR2qJbkq-8u7_tV)
+
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+Contributions are welcome! Please fork the repository and submit a pull request. Make sure to follow the project's coding standards and include tests for any new features.
+
+## Support
+
+If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/A-A7med-i/Course-Compass/issues) or contact the maintainers.
 
 ## License
 
